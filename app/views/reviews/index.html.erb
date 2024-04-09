@@ -1,10 +1,14 @@
 <h1>Reviews for <%= link_to @movie.title, @movie %></h1>
 <ul class="reviews">
   <% @reviews.each do |review| %>
+    <div class="image">
+      <%= image_tag @movie.image_file_name %>
+    </div>
     <li>
       <%= render "shared/stars", percent: review.stars_as_percent %>
       <p>
-        <%= review.name %>
+        <%= profile_image(review.user, 35) %>
+        <%= link_to review.user.username, review.user %>
         <span class="date">
           <%= time_ago_in_words(review.created_at) %> ago
         </span>
