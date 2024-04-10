@@ -166,3 +166,61 @@ Movie.create!([
     image_file_name: "wonder-woman.png"
   }
 ])
+
+Genre.create!(name: "Action")
+Genre.create!(name: "Comedy")
+Genre.create!(name: "Drama")
+Genre.create!(name: "Romance")
+Genre.create!(name: "Thriller")
+Genre.create!(name: "Fantasy")
+Genre.create!(name: "Documentary")
+Genre.create!(name: "Adventure")
+Genre.create!(name: "Animation")
+Genre.create!(name: "Sci-Fi")
+
+# db/seeds.rb
+
+User.create!(
+  name: "John Doe",
+  email: "john@example.com",
+  password: "secretdemo",
+  password_confirmation: "secretdemo",
+  username: "johndoe",
+  admin: true
+)
+
+User.create!(
+  name: "Jane Smith",
+  email: "jane@example.com",
+  password: "secretdemo",
+  password_confirmation: "secretdemo",
+  username: "janesmith",
+  admin: false
+)
+
+User.create!(
+  name: "Michael Johnson",
+  email: "michael@example.com",
+  password: "secretdemo",
+  password_confirmation: "secretdemo",
+  username: "michaelj",
+  admin: false
+)
+
+User.create!(
+  name: "Emily Davis",
+  email: "emily@example.com",
+  password: "secretdemo",
+  password_confirmation: "secretdemo",
+  username: "emilydavis",
+  admin: false
+)
+
+User.create!(
+  name: "David Wilson",
+  email: "david@example.com",
+  password: "secretdemo",
+  password_confirmation: "secretdemo",
+  username: "davidwilson",
+  admin: false
+)
